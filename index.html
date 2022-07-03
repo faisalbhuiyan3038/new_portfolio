@@ -6,21 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
 </head>
 <body>
+    <button class="sidebar-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
     <menu class="main-menu">
+        <button class="close-btn"><i class="fas fa-times"></i></button>
         <div class="main-menu__top">
-            <a href="#" class="logo">
+            <a href="#intro" class="logo">
                 <h3>I</h3> 
                 <span>Imran</span>
             </a>
             
         </div>
         <nav class="main-menu_nav"> 
-            <a  href="#">About</a> 
-            <a  href="#">My Skills</a> 
+            <a  href="#about">About</a> 
+            <a  href="#skill">My Skills</a> 
             <a  href="#">Work</a> 
-            <a  href="#">Education</a>
+            <a  href="#education">Education</a>
             <a  href="#contact">Contact</a> 
         </nav>
         <ul class="social">
@@ -52,7 +60,7 @@
             </li>
         </ul>
     </menu>
-    <div>
+    <div id="intro">
         <div class="page-outer">
             <span class="tags top-tags">
                 < /html> 
@@ -77,7 +85,7 @@
                                 <div class="text">Contact me!</div>
                            
                         </a>
-                </div>
+                    </div>
                 </section>
 
                 <section id="about" class="section-full section-about">
@@ -139,9 +147,78 @@
                             </div>
                         </div>
                 </section>
+                
+                <section id="education" class="section-full section-education">
+                    <div class="text-zone">
+                        
+                        <h2>
+                            <span>E</span><span>d</span><span>u</span><span>c</span><span>a</span><span>t</span><span>i</span><span></span><span>o</span><span>n</span>
+                        </h2>
+                        
+                        <div class="institute">
+                            
+                            <img src="images/University-Picture.jpg"  alt="">
+                            
+                            <p class="gray-text">
+                                <span style="font-size:2rem;color: chocolate;">
+                                    BSC. in CSE
+                                </span>
+                                
+                                <br>
+                                <a href="#">Independent University Bangladesh</a>
+                                <br>
+                                2019 - Present <br>
+                                CGPA: 3.00
+                            </p>
+                           
+                            
+                        </div>
+                        
+                        <div class="institute">
+                            
+                            <img src="images/milestone.jpg.crdownload"  alt="">
+                            
+                            <p class="gray-text">
+                                <span style="font-size:2rem;color: chocolate;">
+                                    HSC
+                                </span>
+                                
+                                <br>
+                                <a href="#">Milestone College</a>
+                                <br>
+                                2017- 2018 <br>
+                                CGPA: 4.00
+                            </p>
+                           
+                            
+                        </div>
 
 
-                <section id="contact"class="section-full section-contact">
+                        <div class="institute">
+                            
+                            <img src="images/bbn.jfif"  alt="">
+                            
+                            <p class="gray-text">
+                                <span style="font-size:2rem;color: chocolate;">
+                                    SSC
+                                </span>
+                                
+                                <br>
+                                <a href="#">Banani Bidyaniketan</a>
+                                <br>
+                                2015 - 2016 <br>
+                                CGPA: 5.00
+                            </p>
+                           
+                            
+                        </div>
+
+                        
+                    </div>
+                </section>
+                
+
+                <section id="contact" class="section-full section-contact">
                     <div class="text-zone">
                         
                         <h2>
@@ -165,17 +242,18 @@
                                     <li>
                                         <textarea name="msg" id="" style="width: 547px;height:150px" cols="30" rows="10" placeholder="Message"></textarea>
                                     </li>
-                                    <li>
-                                        <a href="#" class="flat-button">
+                                    <a href="#" class="flat-button">
                            
-                                            <div class="bg"></div>
-                                           
-                                            <div class="text">Send message!</div>
+                                        <div class="bg"></div>
                                        
-                                        </a>
-                                    </li>
+                                        <div class="text">Send message!</div>
+                                   
+                                    </a>
+                                    
                                 </ul>
+                                
                             </form>
+                            
                         </div>
                     </div>
                 </section>
