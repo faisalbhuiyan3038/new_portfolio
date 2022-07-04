@@ -12,12 +12,28 @@ letter = document.querySelectorAll(".text-zone span");
 const toggleBtn = document.querySelector(".sidebar-toggle")
 const menu = document.querySelector(".main-menu");
 const closeBtn = document.querySelector(".close-btn");
-const ab = document.getElementById("about");
-console.log(ab);
-const skill = document.getElementById("skill");
-const education = document.getElementById("education");
-const contact = document.getElementById("contact");
-// const work = document.getElementById("about");
+const about = document.getElementById("aboutLink");
+const skill = document.getElementById("skillLink");
+const work = document.getElementById("workLink");
+const education = document.getElementById("educationLink");
+const contact = document.getElementById("contactLink");
+
+
+about.addEventListener("click", function () {
+	menu.classList.remove("open-nav");
+});
+skill.addEventListener("click", function () {
+	menu.classList.remove("open-nav");
+});
+work.addEventListener("click", function () {
+	menu.classList.remove("open-nav");
+});
+education.addEventListener("click", function () {
+	menu.classList.remove("open-nav");
+});
+contact.addEventListener("click", function () {
+	menu.classList.remove("open-nav");
+});
 
 toggleBtn.addEventListener("click", function () {
 	menu.classList.add("open-nav");
@@ -25,8 +41,5 @@ toggleBtn.addEventListener("click", function () {
 });
 closeBtn.addEventListener("click", function () {
 	menu.classList.remove("open-nav");
-});
-ab.addEventListener("click", function () {
-	console.log("hi");
 });
 
