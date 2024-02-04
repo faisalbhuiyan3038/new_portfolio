@@ -699,7 +699,7 @@ textarea {
         visibility: visible;
     }
     .section-full .text-zone {
-        padding-left: 3rem;
+        padding-left: 1rem;
         width: 100%;
     }
     .section-full .text-zone span{
@@ -763,7 +763,7 @@ textarea {
         color: #fff;
         margin: 0;
         font-weight: 700;
-        font-size: 8.3rem;
+        font-size: 5.3rem;
         line-height: 8.7rem;
         position: relative;
     }
