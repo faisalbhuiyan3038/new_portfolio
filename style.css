@@ -772,3 +772,13 @@ textarea {
     
 }
 
+.divForMargin {
+    margin-bottom: 0.3em;
+}
+
+@media screen and (max-width: 767px) {
+    .divForMargin {
+        margin-bottom: 0; /* Decrease font size by 5% on mobile */
+    }
+}
+
