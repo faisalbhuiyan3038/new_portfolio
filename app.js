@@ -43,3 +43,13 @@ closeBtn.addEventListener("click", function () {
 	menu.classList.remove("open-nav");
 });
 
+var typed = new Typed('#typedAnim', {
+	strings: ['A developer in progress...', 'Crafting digital experiences one line of code at a time.', 
+	'Turning caffeine into code since 2019...', 'In a committed relationship with my keyboard and coffee mug...', 
+	'Decoding the matrix of possibilities...', 'Embracing the art of debugging gracefully...','Juggling between semicolons and deadlines...',
+	'Debugging the present, coding the future...','Fueled by curiosity, driven by code...'],
+	typeSpeed: 50,
+	backSpeed: 20,
+	showCursor: false,
+	loop: true
+  });
