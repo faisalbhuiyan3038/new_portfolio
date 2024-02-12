@@ -53,3 +53,19 @@ var typed = new Typed('#typedAnim', {
 	showCursor: false,
 	loop: true
   });
+
+
+  const container = '.tagcloud';
+  const texts = [
+	  'Python', 'C++', 'JavaScript',
+	  'CSS3', 'HTML5', 'Java',
+	  'ASP.NET', 'Angular', 'React',
+	  'PHP', 'MySQL', 'Typescript', 'Git', 'NodeJs'
+  ];
+  const options = {radius: 250, maxSpeed: 'normal', initSpeed: 'fast',
+	direction: 300, keep: true,};
+  
+  TagCloud(container, texts, options);
+
+  var color = "#FF5733";
+  document.querySelector('.tagcloud')
