@@ -62,10 +62,27 @@ var typed = new Typed('#typedAnim', {
 	  'ASP.NET', 'Angular', 'React',
 	  'PHP', 'MySQL', 'Typescript', 'Git', 'NodeJs'
   ];
-  const options = {radius: 250, maxSpeed: 'normal', initSpeed: 'fast',
-	direction: 300, keep: true,};
+
   
-  TagCloud(container, texts, options);
+  var viewportWidth = window.innerWidth;
+  var mobileThreshold = 768;
+
+  if(viewportWidth<mobileThreshold){
+	const options = {radius: 150, maxSpeed: 'normal', initSpeed: 'fast',
+	direction: 300, keep: true,};
+	TagCloud(container, texts, options);
 
   var color = "#FF5733";
   document.querySelector('.tagcloud')
+  }
+  else {
+	const options = {radius: 250, maxSpeed: 'normal', initSpeed: 'fast',
+	direction: 300, keep: true,};
+	TagCloud(container, texts, options);
+
+  var color = "#FF5733";
+  document.querySelector('.tagcloud')
+  }
+  
+  
+  
